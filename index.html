@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Todo App</title>
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="res/css/bootstrap.css">
+<!-- MY STYLES -->
+<link rel="stylesheet" href="res/css/todo-app.css">
+<!-- FAVICON -->
+<link rel="shortcut icon" href="res/img/favicon.ico" type="image/png" />
+<link rel="icon" href="res/img/favicon.ico" type="image/png" />
+</head>
+
+<body>
+
+	<div class="row container-fluid">
+	
+		<navigation-bar></navigation-bar>
+		
+		<div class="view-container">
+			<div ui-view class="view-frame"></div>
+		</div>
+		
+	</div>
+<!-- JQuery -->
+<script src="res/js/jquery.min.js"></script>
+<!-- ChartJS Framework -->
+<script src="res/js/Chart.js"></script>
+<!-- highcharts Frameworks -->
+<script src="res/js/highcharts.js"></script>
+<script src="res/js/highcharts-more.js"></script>
+<!-- Twitter Bootstrap -->
+<script src="res/js/bootstrap.min.js"></script>
+<!-- AngularJS -->
+<script src="res/js/angular.min.js"></script>
+<!-- AngularUI Router -->
+<script src="res/js/angular-ui-router.js"></script>
+<!-- Angular Basic Router -->
+<script src="res/js/angular-route.min.js"></script>
+<!-- Angular Animate -->
+<script src="res/js/angular-animate.min.js"></script>
+<!-- locales -->
+<script src="res/js/i18n/angular-locale_de-de.js"></script>
+<!-- Main App Module -->
+<script src="app/app.js"></script>
+<!-- Module Controllers -->
+<script src="app/modules/dashboard/controller/modules.dashboard.controller.js"></script>
+<script src="app/modules/todo/controller/modules.todo.controller.js"></script>
+<script src="app/modules/lol/controller/modules.lol.controller.js"></script>
+<script src="app/modules/charts/controller/modules.charts.controller.js"></script>
+<!-- Directives -->
+<script src="app/modules/common/directives/common.directives.navigation.js"></script>
+<script src="app/modules/common/directives/common.directives.chart.js"></script>
+<script src="app/modules/todo/directive/modules.todo.directive.js"></script>
+<!-- General, Util -->
+<script src="app/modules/common/util/common.util.date.js"></script>
+</body>
+</html>
